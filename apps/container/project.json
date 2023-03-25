@@ -17,7 +17,8 @@
         "tsConfig": "apps/container/tsconfig.app.json",
         "assets": [
           "apps/container/src/favicon.ico",
-          "apps/container/src/assets"
+          "apps/container/src/assets",
+          "apps/container/src/netlify.toml"
         ],
         "styles": ["apps/container/src/styles.css"],
         "scripts": [],

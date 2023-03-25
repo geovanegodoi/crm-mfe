@@ -16,7 +16,7 @@ export async function getWeatherData(
   const res = await fetch(weatherApi);
   const json = await res.json();
   const { temperature, weathercode } = json.current_weather;
-  await sleep(1000);
+  await sleep(500);
 
   return { temperature, weathercode };
 }
