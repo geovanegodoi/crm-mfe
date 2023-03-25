@@ -17,7 +17,8 @@
         "tsConfig": "apps/weatherreport/tsconfig.app.json",
         "assets": [
           "apps/weatherreport/src/favicon.ico",
-          "apps/weatherreport/src/assets"
+          "apps/weatherreport/src/assets",
+          "apps/weatherreport/src/netlify.toml"
         ],
         "styles": ["apps/weatherreport/src/styles.css"],
         "scripts": [],

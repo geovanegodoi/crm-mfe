@@ -15,7 +15,11 @@
         "baseHref": "/",
         "main": "apps/meetings/src/main.ts",
         "tsConfig": "apps/meetings/tsconfig.app.json",
-        "assets": ["apps/meetings/src/favicon.ico", "apps/meetings/src/assets"],
+        "assets": [
+          "apps/meetings/src/favicon.ico",
+          "apps/meetings/src/assets",
+          "apps/meetings/src/netlify.toml"
+        ],
         "styles": ["apps/meetings/src/styles.css"],
         "scripts": [],
         "isolatedConfig": true,

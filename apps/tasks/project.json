@@ -15,7 +15,11 @@
         "baseHref": "/",
         "main": "apps/tasks/src/main.ts",
         "tsConfig": "apps/tasks/tsconfig.app.json",
-        "assets": ["apps/tasks/src/favicon.ico", "apps/tasks/src/assets"],
+        "assets": [
+          "apps/tasks/src/favicon.ico",
+          "apps/tasks/src/assets",
+          "apps/tasks/src/netlify.toml"
+        ],
         "styles": ["apps/tasks/src/styles.css"],
         "scripts": [],
         "isolatedConfig": true,
