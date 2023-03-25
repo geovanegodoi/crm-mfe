@@ -12,8 +12,6 @@ export function useWeather(): {
     weathercode: 0,
   });
 
-  console.log(coords);
-
   useEffect(() => {
     if (coords) {
       const getData = async () => {
@@ -22,7 +20,7 @@ export function useWeather(): {
       };
       getData();
     }
-  }, []);
+  }, [coords]);
 
   return {
     weather: currentWeather,

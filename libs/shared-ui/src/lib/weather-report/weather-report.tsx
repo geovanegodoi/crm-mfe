@@ -12,6 +12,7 @@ export function WeatherReport(props: WeatherReportProps) {
   const { weather, isLoading } = useWeather();
   const weatherProps = getWeatherIconProps(weather.weathercode);
 
+  console.log(isLoading);
   return (
     <div className={`${styles['weather-report']} card-padding`}>
       {isLoading ? <WeatherReportSkeleton /> : <WeatherReportComponent />}
