@@ -1,0 +1,30 @@
+.tag {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  border-radius: 28px;
+  padding: 1em 2em;
+  width: max-content;
+}
+
+.tag-active {
+  background: #dbf3e6;
+  color: #6ecf9d;
+}
+
+.tag-in-progress {
+  background: #fff4cc;
+  color: #b6900a;
+}
+
+.tag-done {
+  background: #d7f0ff;
+  color: #2695b8;
+}
+
+.tag-high {
+  background: #ffcccc;
+  color: #b82f26;
+}

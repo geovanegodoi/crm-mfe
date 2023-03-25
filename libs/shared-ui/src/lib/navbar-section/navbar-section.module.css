@@ -1,0 +1,28 @@
+.navbar-item {
+  color: var(--light-color);
+  padding: 1em 2em 1em 1em;
+  font-weight: bold;
+  display: flex;
+  gap: 1em;
+  margin: 1em 0em;
+  align-items: center;
+}
+
+.navbar-item:hover {
+  color: var(--primary-color);
+  background: var(--light-color);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  cursor: pointer;
+}
+
+.active {
+  color: var(--primary-color);
+  background: var(--light-color);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+hr {
+  margin: 2em 1em 2em 0em;
+}

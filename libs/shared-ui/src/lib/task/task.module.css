@@ -1,0 +1,19 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+}
+
+.task p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--dark-color);
+}
+
+.task > button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}

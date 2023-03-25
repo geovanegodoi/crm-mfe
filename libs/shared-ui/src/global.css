@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+:root {
+  --primary-color: #5d44f8;
+  --secondary-color: #6ecf9d;
+  --light-color: #f7f7f8;
+  --dark-color: #2c2e32;
+  --white-color: #fff;
+  --black-color: #000;
+  --red-color: #ff0000;
+  --outline: 1px solid red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 200;
+}
+
+.card,
+.card-padding {
+  background: var(--light-color);
+  border: 1px solid #ecedee;
+  box-shadow: 0px 5px 30px 1px rgba(93, 68, 248, 0.04);
+  border-radius: 18px;
+}
+
+.card-padding {
+  padding: 1.5em;
+}
