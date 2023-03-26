@@ -12,11 +12,14 @@ export function TasksPanel({ tasks: initial }: TasksPanelProps) {
   const [tasks, addTask, deleteTask] = useTasks(initial || []);
 
   return (
-    <Panel title="Create New Task" onClick={addTask}>
-      {(tasks &&
-        tasks.map((item, index) => (
-          <Task key={index} {...item} onDelete={() => deleteTask(item.id)} />
-        ))) || <p>Data missing =(</p>}
+    <Panel
+      title="Create New Task"
+      onClick={addTask}
+      fallback={tasks.length === 0}
+    >
+      {tasks.map((item, index) => (
+        <Task key={index} {...item} onDelete={() => deleteTask(item.id)} />
+      ))}
     </Panel>
   );
 }

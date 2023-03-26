@@ -15,6 +15,7 @@
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
   padding: 1em 1em 1em 2em;
+  font-weight: 500;
 }
 
 .panel-title > button {
@@ -31,7 +32,9 @@
 }
 
 .panel-content {
-  padding: 0em 2em;
+  max-height: 45vh;
+  overflow-y: auto;
+  margin: 0em 1em 0em 2em;
 }
 
 .panel-content > div {
@@ -41,4 +44,20 @@
 
 .panel-content > div:last-child {
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

@@ -10,6 +10,6 @@ export default Story;
 
 export const Primary = {
   args: {
-    meetings: [MeetingStories.Primary.args],
+    // meetings: [MeetingStories.Primary.args],
   } as MeetingsPanelProps,
 };

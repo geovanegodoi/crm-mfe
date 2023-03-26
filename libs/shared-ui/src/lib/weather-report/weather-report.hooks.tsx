@@ -6,21 +6,24 @@ export function useWeather(): {
   weather: WeatherData;
   isLoading: boolean;
 } {
-  const { coords } = useGeolocated();
+  const { coords: coordinates } = useGeolocated();
   const [currentWeather, setCurrentWeather] = useState<WeatherData>({
     temperature: 0,
     weathercode: 0,
   });
 
   useEffect(() => {
-    if (coords) {
+    if (coordinates) {
       const getData = async () => {
-        const data = await getWeatherData(coords.latitude, coords.longitude);
+        const data = await getWeatherData(
+          coordinates.latitude,
+          coordinates.longitude
+        );
         setCurrentWeather(data);
       };
       getData();
     }
-  }, [coords]);
+  }, [coordinates]);
 
   return {
     weather: currentWeather,

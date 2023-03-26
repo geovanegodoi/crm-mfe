@@ -46,10 +46,10 @@
       "executor": "nx:run-commands",
       "outputs": [],
       "options": {
-        "command": "NODE_OPTIONS=--openssl-legacy-provider npx nx run shared-ui:ssb"
+        "command": "NODE_OPTIONS=--openssl-legacy-provider npx nx run shared-ui:sb"
       }
     },
-    "ssb": {
+    "sb": {
       "executor": "@nrwl/storybook:storybook",
       "options": {
         "open": true,

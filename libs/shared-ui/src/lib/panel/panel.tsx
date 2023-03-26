@@ -6,11 +6,12 @@ export interface PanelProps {
   title: string;
   onClick: () => void;
   children: JSX.Element | JSX.Element[];
+  fallback: boolean;
 }
 
-export function Panel({ title, onClick, children }: PanelProps) {
+export function Panel({ title, onClick, children, fallback }: PanelProps) {
   return (
-    <div className="card">
+    <div className={styles['panel']}>
       <div className={styles['panel-title']}>
         <p>{title}</p>
         <button onClick={onClick}>
@@ -18,19 +19,17 @@ export function Panel({ title, onClick, children }: PanelProps) {
         </button>
       </div>
       <div className={styles['panel-content']}>
-        {children || <UndefinedContent />}
+        {fallback ? <NoDataFound /> : children}
       </div>
     </div>
   );
 }
 
-function UndefinedContent() {
+function NoDataFound() {
   return (
-    <>
-      <div>undefined</div>
-      <div>undefined</div>
-      <div>undefined</div>
-    </>
+    <div style={{ color: '#bec0c3' }}>
+      <p>No data found</p>
+    </div>
   );
 }
 
